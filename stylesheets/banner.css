@@ -1,0 +1,760 @@
+/* Compass extensions */
+/* Base */
+/* Base blue color */
+/* Name for the UConn font */
+/* Name for secondary font */
+/* Fonts to fallback on if webfonts don't load */
+/* Base URL for the webfonts */
+/* Height of the blue banner per web UConn web standards */
+/* Banner namespace. To avoid conflicts with other CSS frameworks */
+/* Button size for Search and A-Z Index */
+/* Icon font size */
+/**
+ * Responsive Breakpoints
+ * 
+ * We're defaulting to the breakpoints in Bootstrap 2.3.x, since it's fairly common
+ * on campus. These may change depending on the base CSS framework that you're using.
+ * You'll want to adjust these so that the banner "responds" in concert with the rest
+ * of your site.
+ */
+/**
+ * Edge padding.
+ * 
+ * When the banner goes responsive, we add padding to the page edge so that the logo, buttons,
+ * header and search box don't butt up against the edge of the browser. Customize the amount of
+ * added padding here
+ */
+/**
+ * Neede for IE
+ */
+/* Utility class for webfonts in old browsers */
+/* line 2, ../scss/base/_utility.scss */
+#wordmark, #university-of-connecticut, #site-title, #super-title {
+  text-rendering: geometricPrecision;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=99);
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Import normalize.scss, but namespaced.
+ */
+/* line 55, ../scss/base/_normalize.scss */
+#uconn-banner article,
+#uconn-banner aside,
+#uconn-banner details,
+#uconn-banner figcaption,
+#uconn-banner figure,
+#uconn-banner footer,
+#uconn-banner header,
+#uconn-banner hgroup,
+#uconn-banner nav,
+#uconn-banner section,
+#uconn-banner summary {
+  display: block;
+}
+/* line 63, ../scss/base/_normalize.scss */
+#uconn-banner audio,
+#uconn-banner canvas,
+#uconn-banner video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/* line 74, ../scss/base/_normalize.scss */
+#uconn-banner audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/* line 84, ../scss/base/_normalize.scss */
+#uconn-banner [hidden], #uconn-banner template {
+  display: none;
+}
+/* line 97, ../scss/base/_normalize.scss */
+#uconn-banner html {
+  font-size: 100%;
+  background: white;
+  color: black;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* line 113, ../scss/base/_normalize.scss */
+#uconn-banner html,
+#uconn-banner button,
+#uconn-banner input,
+#uconn-banner select,
+#uconn-banner textarea {
+  font-family: sans-serif;
+}
+/* line 119, ../scss/base/_normalize.scss */
+#uconn-banner body {
+  margin: 0;
+}
+/* line 132, ../scss/base/_normalize.scss */
+#uconn-banner a {
+  background: transparent;
+}
+/* line 139, ../scss/base/_normalize.scss */
+#uconn-banner a:focus {
+  outline: thin dotted;
+}
+/* line 146, ../scss/base/_normalize.scss */
+#uconn-banner a:hover, #uconn-banner a:active {
+  outline: 0;
+}
+/* line 159, ../scss/base/_normalize.scss */
+#uconn-banner h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* line 164, ../scss/base/_normalize.scss */
+#uconn-banner h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+/* line 169, ../scss/base/_normalize.scss */
+#uconn-banner h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+/* line 174, ../scss/base/_normalize.scss */
+#uconn-banner h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+/* line 179, ../scss/base/_normalize.scss */
+#uconn-banner h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+/* line 184, ../scss/base/_normalize.scss */
+#uconn-banner h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+/* line 192, ../scss/base/_normalize.scss */
+#uconn-banner abbr[title] {
+  border-bottom: 1px dotted;
+}
+/* line 199, ../scss/base/_normalize.scss */
+#uconn-banner b,
+#uconn-banner strong {
+  font-weight: bold;
+}
+/* line 204, ../scss/base/_normalize.scss */
+#uconn-banner blockquote {
+  margin: 1em 40px;
+}
+/* line 211, ../scss/base/_normalize.scss */
+#uconn-banner dfn {
+  font-style: italic;
+}
+/* line 217, ../scss/base/_normalize.scss */
+#uconn-banner mark {
+  background: #ff0;
+  color: #000;
+}
+/* line 225, ../scss/base/_normalize.scss */
+#uconn-banner p,
+#uconn-banner pre {
+  margin: 1em 0;
+}
+/* line 236, ../scss/base/_normalize.scss */
+#uconn-banner code,
+#uconn-banner kbd,
+#uconn-banner pre,
+#uconn-banner samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/* line 246, ../scss/base/_normalize.scss */
+#uconn-banner pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/* line 254, ../scss/base/_normalize.scss */
+#uconn-banner q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/* line 263, ../scss/base/_normalize.scss */
+#uconn-banner q {
+  quotes: none;
+}
+/* line 270, ../scss/base/_normalize.scss */
+#uconn-banner q:before,
+#uconn-banner q:after {
+  content: '';
+  content: none;
+}
+/* line 277, ../scss/base/_normalize.scss */
+#uconn-banner small {
+  font-size: 80%;
+}
+/* line 285, ../scss/base/_normalize.scss */
+#uconn-banner sub,
+#uconn-banner sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+/* line 292, ../scss/base/_normalize.scss */
+#uconn-banner sup {
+  top: -0.5em;
+}
+/* line 296, ../scss/base/_normalize.scss */
+#uconn-banner sub {
+  bottom: -0.25em;
+}
+/* line 309, ../scss/base/_normalize.scss */
+#uconn-banner dl,
+#uconn-banner menu,
+#uconn-banner ol,
+#uconn-banner ul {
+  margin: 1em 0;
+}
+/* line 315, ../scss/base/_normalize.scss */
+#uconn-banner dd {
+  margin: 0 0 0 40px;
+}
+/* line 324, ../scss/base/_normalize.scss */
+#uconn-banner menu,
+#uconn-banner ol,
+#uconn-banner ul {
+  padding: 0 0 0 40px;
+}
+/* line 333, ../scss/base/_normalize.scss */
+#uconn-banner nav ul,
+#uconn-banner nav ol {
+  list-style-image: none;
+}
+/* line 348, ../scss/base/_normalize.scss */
+#uconn-banner img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/* line 357, ../scss/base/_normalize.scss */
+#uconn-banner svg:not(:root) {
+  overflow: hidden;
+}
+/* line 367, ../scss/base/_normalize.scss */
+#uconn-banner figure {
+  margin: 0;
+}
+/* line 377, ../scss/base/_normalize.scss */
+#uconn-banner form {
+  margin: 0;
+}
+/* line 384, ../scss/base/_normalize.scss */
+#uconn-banner fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/* line 395, ../scss/base/_normalize.scss */
+#uconn-banner legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+/* line 412, ../scss/base/_normalize.scss */
+#uconn-banner button,
+#uconn-banner input,
+#uconn-banner select,
+#uconn-banner textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+/* line 425, ../scss/base/_normalize.scss */
+#uconn-banner button,
+#uconn-banner input {
+  line-height: normal;
+}
+/* line 435, ../scss/base/_normalize.scss */
+#uconn-banner button,
+#uconn-banner select {
+  text-transform: none;
+}
+/* line 450, ../scss/base/_normalize.scss */
+#uconn-banner button,
+#uconn-banner html input[type="button"],
+#uconn-banner input[type="reset"],
+#uconn-banner input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+/* line 461, ../scss/base/_normalize.scss */
+#uconn-banner button[disabled],
+#uconn-banner input[disabled] {
+  cursor: default;
+}
+/* line 471, ../scss/base/_normalize.scss */
+#uconn-banner input[type="checkbox"],
+#uconn-banner input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+/* line 483, ../scss/base/_normalize.scss */
+#uconn-banner input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 494, ../scss/base/_normalize.scss */
+#uconn-banner input[type="search"]::-webkit-search-cancel-button,
+#uconn-banner input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 502, ../scss/base/_normalize.scss */
+#uconn-banner button::-moz-focus-inner, #uconn-banner input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/* line 511, ../scss/base/_normalize.scss */
+#uconn-banner textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* line 522, ../scss/base/_normalize.scss */
+#uconn-banner table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, ../scss/base/_links.scss */
+#uconn-banner a:link, #uconn-banner a:hover, #uconn-banner a:visited {
+  text-decoration: none;
+}
+
+/* Import the webfonts */
+@font-face {
+  font-family: "UConn";
+  src: url("http://uconn.edu/shared/fonts/uconn/uconn.eot");
+  src: url("http://uconn.edu/shared/fonts/uconn/uconn.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/uconn/uconn.svg#uconnregular") format("svg"), url("http://uconn.edu/shared/fonts/uconn/uconn.woff") format("woff"), url("http://uconn.edu/shared/fonts/uconn/uconn.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("http://uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.eot");
+  src: url("http://uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.svg#proxima_nova_ltsemibold") format("svg"), url("http://uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.woff") format("woff"), url("http://uconn.edu/shared/fonts/proximanova_bold_macroman/ProximaNova-Bold-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("http://uconn.edu/shared/fonts/proximanova_bolditalic_macroman/ProximaNova-BoldIt-webfont.eot");
+  src: url("http://uconn.edu/shared/fonts/proximanova_bolditalic_macroman/ProximaNova-BoldIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/proximanova_bolditalic_macroman/ProximaNova-BoldIt-webfont.svg#proxima_novabold_italic") format("svg"), url("http://uconn.edu/shared/fonts/proximanova_bolditalic_macroman/ProximaNova-BoldIt-webfont.woff") format("woff"), url("http://uconn.edu/shared/fonts/proximanova_bolditalic_macroman/ProximaNova-BoldIt-webfont.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("http://uconn.edu/shared/fonts/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot");
+  src: url("http://uconn.edu/shared/fonts/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.svg#proxima_nova_ltsemibold") format("svg"), url("http://uconn.edu/shared/fonts/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.woff") format("woff"), url("http://uconn.edu/shared/fonts/proximanova_semibold_macroman/ProximaNova-Sbold-webfont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("http://uconn.edu/shared/fonts/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot");
+  src: url("http://uconn.edu/shared/fonts/proximanova_regular_macroman/ProximaNova-Reg-webfont.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/proximanova_regular_macroman/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular") format("svg"), url("http://uconn.edu/shared/fonts/proximanova_regular_macroman/ProximaNova-Reg-webfont.woff") format("woff"), url("http://uconn.edu/shared/fonts/proximanova_regular_macroman/ProximaNova-Reg-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("http://uconn.edu/shared/fonts/proximanova_italic_macroman/ProximaNova-RegIt-webfont.eot");
+  src: url("http://uconn.edu/shared/fonts/proximanova_italic_macroman/ProximaNova-RegIt-webfont.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/proximanova_italic_macroman/ProximaNova-RegIt-webfont.svg#proxima_novaregular_italic") format("svg"), url("http://uconn.edu/shared/fonts/proximanova_italic_macroman/ProximaNova-RegIt-webfont.woff") format("woff"), url("http://uconn.edu/shared/fonts/proximanova_italic_macroman/ProximaNova-RegIt-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url("http://uconn.edu/shared/fonts/icons/icons.eot");
+  src: url("http://uconn.edu/shared/fonts/icons/icons.eot?#iefix") format("embedded-opentype"), url("http://uconn.edu/shared/fonts/icons/icons.ttf") format("truetype"), url("http://uconn.edu/shared/fonts/icons/icons.woff") format("woff"), url("http://uconn.edu/shared/fonts/icons/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../scss/fonts/_icons.scss */
+[class*="icon-"] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 26, ../scss/fonts/_icons.scss */
+.icon-a-z:before {
+  content: "\e600";
+}
+
+/* line 29, ../scss/fonts/_icons.scss */
+.icon-search:before {
+  content: "\e601";
+}
+
+/* Layout */
+/* line 3, ../scss/layout/_layout.scss */
+#uconn-banner .container {
+  width: 1170px;
+  margin: 0px auto;
+}
+@media (max-width: 1170px) {
+  /* line 3, ../scss/layout/_layout.scss */
+  #uconn-banner .container {
+    width: 980px;
+  }
+}
+@media (max-width: 980px) {
+  /* line 3, ../scss/layout/_layout.scss */
+  #uconn-banner .container {
+    width: 100%;
+  }
+}
+/* line 17, ../scss/layout/_layout.scss */
+#uconn-banner .row-fluid {
+  width: 100%;
+  display: table;
+  /**
+   * Child divs are displayed as table cells and aligned middle.
+   */
+}
+/* line 25, ../scss/layout/_layout.scss */
+#uconn-banner .row-fluid > div {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  /**
+   * At smaller screen widths we need to pad the "table" cells so that they're
+   * not up against the edge of the page.
+   */
+}
+@media (max-width: 980px) {
+  /* line 35, ../scss/layout/_layout.scss */
+  #uconn-banner .row-fluid > div:first-child {
+    padding-left: 1em;
+  }
+  /* line 38, ../scss/layout/_layout.scss */
+  #uconn-banner .row-fluid > div:last-child {
+    padding-right: 1em;
+  }
+}
+
+/* line 1, ../scss/layout/_banner.scss */
+#home-link-container {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  /* line 1, ../scss/layout/_banner.scss */
+  #home-link-container {
+    width: 50%;
+  }
+}
+
+/* line 10, ../scss/layout/_banner.scss */
+#uconn-header-container {
+  background-color: #000e2f;
+  color: #fff;
+}
+/* line 13, ../scss/layout/_banner.scss */
+#uconn-header-container .btn {
+  color: #c1e8f8;
+}
+/* line 18, ../scss/layout/_banner.scss */
+#uconn-header-container .row-fluid > div {
+  height: 60px;
+}
+
+/* line 26, ../scss/layout/_banner.scss */
+#home-link {
+  height: 20px;
+  overflow: hidden;
+}
+/* line 30, ../scss/layout/_banner.scss */
+#home-link:hover {
+  text-decoration: none;
+  color: #eee;
+}
+/* line 35, ../scss/layout/_banner.scss */
+#home-link span {
+  margin: auto 0;
+  vertical-align: middle;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+#site-header {
+  padding: 30px 0 15px 0;
+}
+/* line 6, ../scss/layout/_header.scss */
+#site-header .row-fluid > div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  /* line 6, ../scss/layout/_header.scss */
+  #site-header .row-fluid > div {
+    display: block;
+    width: auto;
+    padding: 0 1em;
+  }
+}
+
+/* Module */
+/* line 2, ../scss/module/_wordmark.scss */
+#wordmark {
+  color: #fff;
+  font-family: "UConn", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0px 5px 0 0;
+}
+
+/* line 14, ../scss/module/_wordmark.scss */
+#university-of-connecticut {
+  font-family: "Proxima Nova", Verdana, Arial, Helvetica, sans-serif;
+  color: #9faab2;
+  font-size: 18px;
+  letter-spacing: .055em;
+  word-spacing: .02em;
+  padding: 1px 0 0 10px;
+  font-weight: bold;
+  font-style: normal;
+  border-left: 2px solid #3f4760;
+  line-height: normal;
+}
+@media (max-width: 767px) {
+  /* line 14, ../scss/module/_wordmark.scss */
+  #university-of-connecticut {
+    display: none;
+  }
+}
+
+/* line 2, ../scss/module/_buttons.scss */
+#uconn-banner #button-container {
+  text-align: right;
+}
+/* line 5, ../scss/module/_buttons.scss */
+#uconn-banner #button-container > span {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin: 0px 2px;
+  padding: 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 15, ../scss/module/_buttons.scss */
+#uconn-banner #button-container .btn {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-size: 21px;
+  text-align: center;
+  padding: inherit;
+  text-shadow: none;
+  line-height: normal;
+  vertical-align: auto;
+}
+/* line 26, ../scss/module/_buttons.scss */
+#uconn-banner #button-container .btn [class*="icon-"] {
+  line-height: 32px;
+}
+/* line 31, ../scss/module/_buttons.scss */
+#uconn-banner #button-container .btn, #uconn-banner #button-container .btn:hover, #uconn-banner #button-container .btn:visited, #uconn-banner #button-container .btn:focus {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #1c3173;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #304994), color-stop(100%, #1c3173));
+  background-image: -webkit-linear-gradient(#304994, #1c3173);
+  background-image: -moz-linear-gradient(#304994, #1c3173);
+  background-image: -o-linear-gradient(#304994, #1c3173);
+  background-image: linear-gradient(#304994, #1c3173);
+  -webkit-box-shadow: inset 1px 1px 0 #3957b0;
+  -moz-box-shadow: inset 1px 1px 0 #3957b0;
+  box-shadow: inset 1px 1px 0 #3957b0;
+  border: 1px solid #1e2b51;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  background-position: 0% 0%;
+}
+/* line 40, ../scss/module/_buttons.scss */
+#uconn-banner #button-container .btn:hover {
+  color: #fff;
+}
+
+/* line 1, ../scss/module/_title.scss */
+#site-title {
+  margin: 0px !important;
+  padding: 0px;
+  line-height: inherit;
+}
+/* line 7, ../scss/module/_title.scss */
+#site-title a {
+  padding: 0;
+  margin: 0;
+}
+/* line 10, ../scss/module/_title.scss */
+#site-title a:link, #site-title a:visited {
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-weight: 500;
+  color: #0b1860;
+}
+
+/* line 23, ../scss/module/_title.scss */
+#super-title {
+  font-size: 13px;
+  margin: 0 !important;
+  padding: 0;
+}
+/* line 28, ../scss/module/_title.scss */
+#super-title a:link, #super-title a:visited {
+  color: #868695;
+  font-family: "Proxima Nova", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+/* line 2, ../scss/module/_search.scss */
+#search-container {
+  text-align: right;
+}
+/* line 6, ../scss/module/_search.scss */
+#search-container #button-container .btn-primary {
+  background: #e9e9e9;
+}
+@media (max-width: 500px) {
+  /* line 2, ../scss/module/_search.scss */
+  #search-container {
+    display: block;
+    float: none;
+    margin: 1.5em 0;
+    width: 100%;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 19, ../scss/module/_search.scss */
+  #search-container form {
+    margin: 0px;
+  }
+  /* line 24, ../scss/module/_search.scss */
+  #search-container input {
+    float: none;
+    display: inline-block;
+    width: 75%;
+    margin: 0px;
+  }
+  /* line 31, ../scss/module/_search.scss */
+  #search-container button {
+    margin: 0px;
+    display: inline-block;
+    width: 20%;
+  }
+}
+
+/* line 40, ../scss/module/_search.scss */
+#site-search {
+  margin: 0px;
+}
+
+/* State */
+/**
+ * In general, our strategy for IE7 is to utilize floats... ugh.
+ */
+/* line 5, ../scss/state/_ie7.scss */
+.ie7, .lt-ie8 {
+  /**
+   * Polyfill for icons on IE7 and below
+   */
+}
+/* line 10, ../scss/state/_ie7.scss */
+.ie7 #uconn-banner .row-fluid > div, .lt-ie8 #uconn-banner .row-fluid > div {
+  display: block;
+  float: left;
+}
+/* line 17, ../scss/state/_ie7.scss */
+.ie7 #button-container, .lt-ie8 #button-container {
+  height: 46px !important;
+}
+/* line 24, ../scss/state/_ie7.scss */
+.ie7 .icon-a-z, .lt-ie8 .icon-a-z {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe600;');
+}
+/* line 27, ../scss/state/_ie7.scss */
+.ie7 .icon-search, .lt-ie8 .icon-search {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe601;');
+}
+
+/* line 1, ../scss/state/_ie8.scss */
+.lt-ie9 {
+  /**
+   * Since we aren't doing a table display, we need to explicitly
+   * set the widths for IE
+   */
+}
+/* line 5, ../scss/state/_ie8.scss */
+.lt-ie9 #uconn-banner .row-fluid {
+  white-space: nowrap;
+  /**
+   * IE doesn't support a table layout. Switch to faux inline-block
+   */
+}
+/* line 11, ../scss/state/_ie8.scss */
+.lt-ie9 #uconn-banner .row-fluid > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+}
+/* line 22, ../scss/state/_ie8.scss */
+.lt-ie9 #button-container {
+  width: 40%;
+  /**
+   * (Banner height - button height) / 2
+   * or (60px - 35px) / 2
+   */
+  padding-top: 14px;
+}
+/* line 32, ../scss/state/_ie8.scss */
+.lt-ie9 #home-link-container {
+  line-height: 60px;
+}
+
+/* Theme? */
+/* ... */

@@ -1,0 +1,8 @@
+@import "settings";
+@import "foundation";
+@import "banner";
+
+$patternbg: "../img/bg-pattern.gif";
+
+
+body{background:url($patternbg);}
