@@ -5,4 +5,6 @@
 $patternbg: "../img/bg-pattern.gif";
 
 
-body{background:orange;}
+body{
+	background:url($patternbg);
+}
